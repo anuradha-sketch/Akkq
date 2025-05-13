@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int n,first=1,second=1,next,i;
+    // Write C code here
+    printf("Enter the number of terms:");
+    scanf("%d",&n);
+    printf("Fibonacci series:\n");
+    for(i=0;i<n;i++){
+        if (i<=1)
+        next=i;
+    else{
+        next=first+second;
+        first=second;
+        second=next;
+    }
+    printf("%d",next);
+    }
+    return 0;
+}
+opEnter the number of terms:6
+Fibonacci series:
+012358
+
+=== Code Execution Successful ===
