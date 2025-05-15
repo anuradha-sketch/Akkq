@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() {
+    int mark;
+    float percent;
+    printf("Hi anu!\n");
+    printf("Enter your total marks and percentage:");
+    scanf("%d%f",&mark,&percent);
+    printf("Total marks is:%d\n",mark);
+    printf("Percentage is:%.3f",percent);
+
+    return 0;
+}
+op
+Hi anu!
+Enter your total marks and percentage:550 91.27
+Total marks is:550
+Percentage is:91.270
+
+=== Code Execution Successful ===
