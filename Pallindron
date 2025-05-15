@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main() {
+    int num,reversed =0,rem,original;
+    printf("Enter an number int");
+    scanf("%d", &num);
+    original = num;
+    while (num!=0){
+        rem=num%10;
+        reversed=rem*10+reversed;
+        num/=10;
+    }
+    if(reversed=original){
+    printf("The number is palidr");
+    }
+    else
+    {
+        printf(" The number is not palidr");
+    }
+}
+op
+enter the number int121
+tge number is palidr
