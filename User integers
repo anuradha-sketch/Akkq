@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main() {
+    int a,b,sum;
+    printf("Hi anu!\n");
+    printf("Enter the value of a:");
+    scanf("%d", &a);
+    printf("Enter the value of b:");
+    scanf("%d", &b);
+    sum=a+b;
+    printf("sum of %d and %d is:%d",a,b,sum);
+
+    return 0;
+}
+op
+Hi anu!
+Enter the value of a:20
+Enter the value of b:35
+sum of 20 and 35 is:55
+
+=== Code Execution Successful ===
