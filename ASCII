@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    char ch;
+    printf("Hi anu!\n");
+    printf("Enter any charecter (both upper and lower case):");
+    scanf("%c",&ch);
+    printf("The ASCII value of %c is:%d",ch,ch);
+    
+ return 0;
+}
+op
+Hi anu!
+Enter any charecter (both upper and lower case):Y
+The ASCII value of Y is:89
+
+=== Code Execution Successful ===
