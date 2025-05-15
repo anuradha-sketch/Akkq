@@ -1,0 +1,39 @@
+#include <stdio.h>
+int main() {
+    int a,b,res,ch;
+    printf("Hi anu!\n");
+    printf("Enter the value of a and b:");
+    scanf("%d%d",&a,&b);
+    printf("1.Addition\n2.Substraction\3.Multiplucation\4.Division\n");
+    printf("Enter your choice:");
+    scanf("%d",&ch);
+    switch(ch)
+    {
+        case 1:res=a+b;
+        printf("Sum is;%d",res);
+        break;
+        case 2:res=a-b;
+        printf("Difference is:%d",res);
+        break;
+        case 3:res=a*b;
+        printf("Product is:%d",res);
+        break;
+        case 4:res=a/b;
+        printf("Quotient is:%d",res);
+        break;
+        dfault:printf("Enter valid choice");
+        break;
+        
+        
+    }
+
+    return 0;
+}
+opHi anu!
+Enter the value of a and b:10 5
+1.Addition
+2.Substraction.Multiplucation.Division
+Enter your choice:1
+Sum is;15
+
+=== Code Execution Successful ===
