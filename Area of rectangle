@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    int len,wid,area;
+    printf("Hi anu!\n");
+    printf("enter the length and width of rectangle:");
+    scanf("%d%d%d", &len,&wid);
+    area=len*wid;
+    printf("Area of tectangle is:%d",area);
+
+    return 0;
+}
+op
+anu!
+enter the length and width of rectangle:100 60
+Area of the rectangle is:6000
+Area of tectangle is:6000
+
+=== Code Execution Successful ===
