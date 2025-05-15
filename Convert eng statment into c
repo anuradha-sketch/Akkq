@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main() {
+    int age;
+    char name[20];
+    printf("Hi anu!\n");
+    printf("Enter your name:");
+    scanf("%s",&name);
+    printf("Enter your age:");
+    scanf("%d",&age);
+    printf("Hello %s!, you are %d years old.",name,age);
+    
+ return 0;
+}
+op
+anu!
+Enter your name:Ramya
+Enter your age:20
+Hello Ramya!, you are 20 years old.
+
+=== Code Execution Successful ===
