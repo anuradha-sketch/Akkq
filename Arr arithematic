@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    int arr[10]={1,2,3,4,5},i;
+    int *anu =arr;
+    for(i=0;i<=5;i++){
+        printf("%d ",*(anu+i));
+    }
+    return 0;
+    }
+    op
+    1 2 3 4 5 0 
+
+=== Code Execution Successful ===
