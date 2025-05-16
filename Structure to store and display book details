@@ -1,0 +1,46 @@
+#include <stdio.h>
+struct books{
+    char name[20];
+    int edition;
+    char genre[20];
+    char author[20];
+};
+int main() {
+    int i;
+    struct books b[20];
+    for(i=0;i<5;i++)
+    {
+        printf("Enter details for Book %d\n", i + 1);
+        printf("Enter book nane:");
+        scanf("%s",&b[i].name);
+        printf("Enter author of book:");
+        scanf("%s",&b[i].author);
+        printf("Enter the edition:");
+        scanf("%s",&b[i].edition);
+        printf("Enter book genre:");
+        scanf("%s",&b[i].genre);
+    }
+    printf("======================= BOOK DETAILS =======================\n");
+    printf("%-20s %-15s %-10s %-15s","Book name","Author","Edition","Genre/Type");
+    printf("------------------------------------------------------------\n");
+    for(i=0;i<5;i++)
+    {
+        printf("%-20s %-15s %-10s %-15s\n", b[i].author, b[i].edition,b[i].genre);
+    }
+    
+
+    return 0;
+}
+op
+Enter details for Book 1
+Enter book nane:KALKI
+Enter author of book:Bhyrappa
+Enter the edition:5
+Enter book genre:Fiction
+Enter details for Book 2
+Enter book nane:ODALALA
+Enter author of book:Mahadeva
+Enter the edition:2
+Enter book genre:literature
+Enter details for Book 3
+=== Session Ended. Please Run the code again ===
