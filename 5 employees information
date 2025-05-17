@@ -1,0 +1,85 @@
+#include<stdio.h>
+struct Employee {
+    int id;
+    char name[50];
+    float salary;
+};
+
+int main() {
+    struct Employee employees[5];   
+    int i;
+    printf("Enter details of 5 employees:\n");
+    for (i = 0; i < 5; i++) {
+        printf("\nEmployee %d\n", i + 1);
+
+        printf("ID: ");
+        scanf("%d", &employees[i].id);
+        getchar();  
+
+        printf("Name: ");
+        fgets(employees[i].name, sizeof(employees[i].name), stdin);
+
+        printf("Salary: ");
+        scanf("%f", &employees[i].salary);
+    }
+
+    printf("\n--- Employee Details ---\n");
+    for (i = 0; i < 5; i++) {
+        printf("\nEmployee %d\n", i + 1);
+        printf("ID: %d\n", employees[i].id);
+        printf("Name: %s", employees[i].name);
+        printf("Salary: %.2f\n", employees[i].salary);
+    }
+
+    return 0;
+}
+opEnter details of 5 employees:
+
+Employee 1
+ID: 24567
+Name: anu
+Salary: 50,000
+
+Employee 2
+ID: Name: Salary: 63729 radha 50,000
+
+Employee 3
+ID: Name: Salary: 26393
+
+Employee 4
+ID: 6484
+Name: gagana
+Salary: 50,000
+
+Employee 5
+ID: Name: Salary: 63934 rocky 50,000
+
+--- Employee Details ---
+
+Employee 1
+ID: 24567
+Name: anu
+Salary: 50.00
+
+Employee 2
+ID: 0
+Name: 000
+Salary: 63729.00
+
+Employee 3
+ID: 1234864857
+Name: adha 50,000
+Salary: 26393.00
+
+Employee 4
+ID: 6484
+Name: gagana
+Salary: 50.00
+
+Employee 5
+ID: 0
+Name: 000
+Salary: 63934.00
+
+
+=== Code Execution Successful ===
