@@ -1,0 +1,54 @@
+#include <stdio.h>
+struct Address {
+    char city[50];
+    int pin;
+};
+
+struct Employee {
+    int id;
+    char name[50];
+    float salary;
+    struct Address address;
+};
+
+int main() {
+    struct Employee emp;
+
+    printf("Enter employee details:\n");
+    printf("ID: ");
+    scanf("%d", &emp.id);
+    printf("Name: ");
+    scanf("%s", emp.name);
+    printf("Salary: ");
+    scanf("%f", &emp.salary);
+    printf("City: ");
+    scanf("%s", emp.address.city);
+    printf("PIN code: ");
+    scanf("%d", &emp.address.pin);
+
+    printf("\nEmployee Information:\n");
+    printf("ID: %d\n", emp.id);
+    printf("Name: %s\n", emp.name);
+    printf("Salary: %.2f\n", emp.salary);
+    printf("City: %s\n", emp.address.city);
+    printf("PIN: %d\n", emp.address.pin);
+
+    return 0;
+}
+op
+Enter employee details:
+ID: 1957
+Name: anu
+Salary: 68950
+City: tumkur
+PIN code: 572101
+
+Employee Information:
+ID: 1957
+Name: anu
+Salary: 68950.00
+City: tumkur
+PIN: 572101
+
+
+=== Code Execution Successful ===
