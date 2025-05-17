@@ -1,0 +1,43 @@
+#include <stdio.h>
+struct Book {
+    char title[100];
+    char author[100];
+    float price;
+    char isbn[20];
+};
+
+int main() {
+    struct Book book;
+    printf("Enter book title: ");
+    fgets(book.title, sizeof(book.title), stdin);
+
+    printf("Enter author name: ");
+    fgets(book.author, sizeof(book.author), stdin);
+    printf("Enter price: ");
+    scanf("%f", &book.price);
+    getchar();
+
+    printf("Enter ISBN: ");
+    fgets(book.isbn, sizeof(book.isbn), stdin);
+    printf("\n--- Book Details ---\n");
+    printf("Title: %s", book.title);
+    printf("Author: %s", book.author);
+    printf("Price: %.2f\n", book.price);
+    printf("ISBN: %s", book.isbn);
+
+    return 0;
+}
+op
+Enter book title: kalki
+Enter author name: bhyrappa
+Enter price: 200
+Enter ISBN: 4567
+
+--- Book Details ---
+Title: kalki
+Author: bhyrappa
+Price: 200.00
+ISBN: 4567
+
+
+=== Code Execution Successful ===
